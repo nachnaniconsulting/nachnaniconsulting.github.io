@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Head content here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Magic Pallets Inc.</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Link to Font Awesome for icons -->
 </head>
 <body>
-    <header>
-        <nav>
-            <!-- Navigation content here -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="images/logo.png" alt="Magic Pallets Inc. Logo">
+            </div>
+            <ul class="nav-list">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have a question or need a quote? Reach out to us today!</p>
-            <p><strong>Email:</strong> <a href="mailto:info@magicpallets.com">info@magicpallets.com</a></p>
-            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-            <p><strong>Address:</strong> 1234 Pallet Drive, Cityville, State 12345</p>
-            <p>We look forward to assisting you with your pallet needs.</p>
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-description">Have a question or need more information? Feel free to contact us.</p>
+            <form action="send_email.php" method="post">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+                <button type="submit" class="contact-button">Send</button>
+            </form>
+            <p class="section-description">Or simply email us at <a href="mailto:nachnani.enterprises@gmail.com">nachnani.enterprises@gmail.com</a></p>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2023 Magic Pallets Inc. All rights reserved.</p>
         </div>
